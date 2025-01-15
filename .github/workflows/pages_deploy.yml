@@ -37,7 +37,6 @@ jobs:
 
       - name: Run Loconotion
         run: |
-          docker-compose run \
           -v "${GITHUB_WORKSPACE}/pages_repo/dist:/app/loconotion/dist" \
           -v "${GITHUB_WORKSPACE}/loconotion/example/example_site.toml:/app/loconotion/site.toml" \
           loconotion "site.toml"
